@@ -1,0 +1,85 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-shadow: #00D8FF 2px 2px 7px;
+}
+input{
+  border: none;
+  box-shadow: 1px 2px 8px #00D8FF;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 40px 0;
+  outline: none;
+}
+
+.list-countries{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.list-countries p{
+  margin: 0 10px;
+  text-align: start;
+}
+
+.list-countries button{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #00D8FF;
+  background-color: #242424;
+  color: #00D8FF;
+  transition: all 0.5s ease-in;
+  &:hover{
+    background-color: #00D8FF;
+    cursor: pointer;
+    color: #242424;
+    border: 1px solid #242424;
+  }
+}
+
+.result-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.result-container ul{
+  display: flex;
+  gap: 15px;
+}
+
+.result-container ul li{
+  list-style: none;
+}
+
+.weather-display{
+  display: flex;
+  align-items: center;
+}
+
+.weather-display img{
+  width: 50px;
+  height: 50px;
+}
